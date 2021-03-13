@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="Assets/icon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="live.js"></script>
+    <title>dvinfotech - Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-align">dvinfotech Survey Form</h1>
+        <p id="description" class="text-align">
+            Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form action="#" id="survey-form">
+          <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" required>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age <span class="clue">(optional)</span> </label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+          </div>
+          <div class="form-group">
+            <p>
+                Select your current role
+            </p>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="Employee">Employee</option>
+                <option value="professional">Professional</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>
+                Would you like to refer our firm?
+            </p>
+            <label>
+                <input type="radio" name="user-recommend" value="definetly" class="input-radio" checked>Definetly
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="maybe" class="input-radio" >Maybe
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="not-sure" class="input-radio" >Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>
+                What is your favorite language?
+            </p>
+            <select name="mostLike" id="most-like" class="form-control" required>
+                <option disabled selected value>Select your language</option>
+                <option value="python">Python</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </div>
+          <div class="form-group">
+              <p>
+                  What would like to see improvement? <span class="clue">(Check all that apply)</span>
+              </p>
+              <label>
+                  <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Front-end Projects
+              </label>
+              <label>
+                  <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox">Back-end Projects
+              </label>
+              <label>
+                  <input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox">Data Visualization
+              </label>
+              <label>
+                  <input type="checkbox" name="prefer" value="challenges" class="input-checkbox">Challenges
+              </label>
+              <label>
+                  <input type="checkbox" name="prefer" value="github" class="input-checkbox">GitHub
+              </label>
+              <label>
+                  <input type="checkbox" name="prefer" value="wiki" class="input-checkbox">Wiki
+              </label>
+
+          </div>
+          <div class="form-group">
+              <p>
+                  Any Suggestions?
+              </p>
+              <textarea name="comment" id="comments" cols="30" rows="10" class="input-textarea" placeholder="Enter your suggestion here.."></textarea>
+          </div>
+          <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
